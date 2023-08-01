@@ -1,3 +1,14 @@
+
+Installation steps
+1.Pull github repository
+2.Run Command to install all packages - npm install
+3.Run command to start server - npm start
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

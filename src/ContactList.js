@@ -32,7 +32,7 @@ function ContactList(contacts) {
   }
 
 
-  // To delete todo
+  // To delete conatact
   const deleteContact = async (e) => {
     fetch(`https://jsonplaceholder.typicode.com/users/${e.target.id}`, {
       method: 'DELETE',
@@ -54,7 +54,7 @@ function ContactList(contacts) {
 
 
 
-
+  // Update contact API Call
   const UpdateData = async(data)=>{
     const id = toast.loading("Please wait...")
       const response = fetch(`https://jsonplaceholder.typicode.com/todos/${data.id}`, {
@@ -77,7 +77,7 @@ function ContactList(contacts) {
   }
 
 
-  // To uodate todo
+  // To uodate contact
   const updateContact = async (e) => {
     const objs = dataList.filter((element) => {
       if (+e.target.id === element.id) {
@@ -133,7 +133,7 @@ function ContactList(contacts) {
 
 
 
-
+  // Add contact API call
   const addContact = async(data)=>{
     const id = toast.loading("Please wait...")
       const response = fetch('https://jsonplaceholder.typicode.com/todos', {
@@ -157,7 +157,7 @@ function ContactList(contacts) {
 
   }
 
-
+  // Add contact
   const handleSubmit = async(e) => {
     e.preventDefault();
     
@@ -199,9 +199,8 @@ function ContactList(contacts) {
   
   }
 
-
+// Hide and unhide Add form
   const onClickAddContact = ()=>{
-
     if (addHidden ==true){
       setShowText("Hide Form")
     } else{
